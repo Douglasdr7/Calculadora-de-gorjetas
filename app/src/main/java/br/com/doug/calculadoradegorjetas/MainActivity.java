@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         String valorRecuperado = editValor.getText().toString();
 
-        if (valorRecuperado == null || valorRecuperado.equals("")) {
+       if (valorRecuperado.equals("")) {
 
             Toast.makeText(
                     getApplicationContext(),
@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_LONG
             ).show();
         } else {
+
+
             //Converter string para double
             double valorDigitado = Double.parseDouble(valorRecuperado);
 
@@ -79,4 +81,3 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-}
